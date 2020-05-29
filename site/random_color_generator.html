@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" initial-scale=1>
+    <title>Random Color Generator</title>
+    <link rel="stylesheet" type="text/css" href="style-color.css">
+    
+    </head>
+    <body>
+        <div id="bg-color">
+        </div>
+        
+    
+        
+        <button id="button" class="typo">Click Me!</button>
+        <script>
+
+            
+            
+            var x,y,z,appleColor;
+            
+            document.getElementById("button").onclick=function(){
+                x=Math.round(Math.random()*256);
+                y=Math.round(Math.random()*256);
+                z=Math.round(Math.random()*256);
+                
+                appleColor='rgba(' + x + ' , ' + y + ' , ' + z + ')';
+                document.getElementById("bg-color").style.backgroundColor=appleColor;
+//                document.getElementById("bg-color").innerHTML= '<p>' + appleColor + '</p>';
+    
+            }
+           
+            
+        </script>
+    </body>
+</html>
